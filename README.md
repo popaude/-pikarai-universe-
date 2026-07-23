@@ -1,2 +1,243 @@
 # -pikarai-universe-
 Description : Landing page de Pikarai 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univers de Pikarai</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent-blue: #58a6ff;
+            --accent-purple: #bc8cff;
+            --text-main: #c9d1d9;
+            --text-dim: #8b949e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            background: linear-gradient(145deg, #12161f, #1a202c);
+            border: 1px solid #30363d;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px auto;
+            font-size: 2.5rem;
+            box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--accent-blue);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: #21262d;
+            border: 1px solid #30363d;
+            color: var(--text-main);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            padding: 16px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .link-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent-blue);
+            box-shadow: 0 4px 12px rgba(88, 166, 255, 0.15);
+            background-color: #1f242d;
+        }
+
+        .link-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .link-icon {
+            font-size: 1.3rem;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            color: var(--accent-purple);
+            background: rgba(188, 140, 255, 0.1);
+            padding: 3px 8px;
+            border-radius: 6px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 35px;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            border-top: 1px solid #21262d;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- En-tête -->
+        <div class="header">
+            <div class="avatar">❄️</div>
+            <h1>Pikarai</h1>
+            <div class="subtitle">Streamer Twitch • Passionnée de SF & Design Automobile</div>
+            <p class="bio">
+                Bienvenue dans mon univers nocturne ! Retrouve-moi en live, sur mes réseaux ou viens jouer avec moi.
+            </p>
+            
+            <div class="badge-container">
+                <span class="badge">🎮 Gaming & Chill</span>
+                <span class="badge">📖 SF & Lore</span>
+                <span class="badge">🚗 Passion Auto</span>
+                <span class="badge">🌙 Night Vibes</span>
+            </div>
+        </div>
+
+        <!-- Liens vers tes réseaux -->
+        <div class="links">
+            <a href="https://www.twitch.tv/diamantetperle" target="_blank" class="link-card">
+                <div class="link-info">
+                    <span class="link-icon">💜</span>
+                    <span>Twitch (diamantetperle)</span>
+                </div>
+                <span class="tag">Lives</span>
+            </a>
+
+            <a href="https://www.youtube.com/@diamant-perle" target="_blank" class="link-card">
+                <div class="link-info">
+                    <span class="link-icon">🔴</span>
+                    <span>YouTube (diamant&perle)</span>
+                </div>
+                <span class="tag">Vidéos</span>
+            </a>
+
+            <a href="https://www.instagram.com/pikaraipop" target="_blank" class="link-card">
+                <div class="link-info">
+                    <span class="link-icon">📸</span>
+                    <span>Instagram (@pikaraipop)</span>
+                </div>
+                <span class="tag">Photos & Actus</span>
+            </a>
+
+            <a href="https://www.tiktok.com/@pikarai2001" target="_blank" class="link-card">
+                <div class="link-info">
+                    <span class="link-icon">🎵</span>
+                    <span>TikTok (@pikarai2001)</span>
+                </div>
+                <span class="tag">Vidéos</span>
+            </a>
+
+            <a href="https://discord.gg/e2GWE8e2U" target="_blank" class="link-card">
+                <div class="link-info">
+                    <span class="link-icon">💬</span>
+                    <span>Discord (Pikarailand)</span>
+                </div>
+                <span class="tag">Communauté</span>
+            </a>
+
+            <div class="link-card" style="cursor: default;">
+                <div class="link-info">
+                    <span class="link-icon">🟢</span>
+                    <span>Xbox : pikarai25032001</span>
+                </div>
+                <span class="tag">Gamertag</span>
+            </div>
+
+            <a href="#" class="link-card">
+                <div class="link-info">
+                    <span class="link-icon">🎯</span>
+                    <span>Objectif 150 abonnés : Live Dégustation</span>
+                </div>
+                <span class="tag">Événement</span>
+            </a>
+        </div>
+
+        <!-- Pied de page -->
+        <div class="footer">
+            <p>✨ Bienvenue dans l'univers de Pikarai ✨</p>
+        </div>
+    </div>
+
+</body>
+</html>
